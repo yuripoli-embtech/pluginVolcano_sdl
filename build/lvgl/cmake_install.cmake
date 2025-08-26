@@ -1,4 +1,4 @@
-# Install script for directory: /home/yuri/demoW34_SDL/lvgl
+# Install script for directory: /home/yuri/demoW34_pluginVolcano_SDL/lvgl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,80 +43,80 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_SDL/lvgl/src" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\_private\\.h$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/src" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\_private\\.h$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE FILE FILES
-    "/home/yuri/demoW34_SDL/lv_conf.h"
-    "/home/yuri/demoW34_SDL/lvgl/lv_version.h"
-    "/home/yuri/demoW34_SDL/lvgl/lvgl.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lv_conf.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lv_version.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lvgl.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_SDL/build/lvgl/lib/liblvgl.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/lib/liblvgl.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE FILE FILES
-    "/home/yuri/demoW34_SDL/lv_conf.h"
-    "/home/yuri/demoW34_SDL/lvgl/lv_version.h"
-    "/home/yuri/demoW34_SDL/lvgl/lvgl.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lv_conf.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lv_version.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lvgl.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkgconfig" TYPE FILE FILES "/home/yuri/demoW34_SDL/build/lvgl/lvgl.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkgconfig" TYPE FILE FILES "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/lvgl.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_SDL/build/lvgl/lib/liblvgl_thorvg.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/lib/liblvgl_thorvg.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE FILE FILES
-    "/home/yuri/demoW34_SDL/lv_conf.h"
-    "/home/yuri/demoW34_SDL/lvgl/lv_version.h"
-    "/home/yuri/demoW34_SDL/lvgl/lvgl.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lv_conf.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lv_version.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lvgl.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_SDL/lvgl/demos" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/demos" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_SDL/build/lvgl/lib/liblvgl_demos.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/lib/liblvgl_demos.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE FILE FILES
-    "/home/yuri/demoW34_SDL/lv_conf.h"
-    "/home/yuri/demoW34_SDL/lvgl/lv_version.h"
-    "/home/yuri/demoW34_SDL/lvgl/lvgl.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lv_conf.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lv_version.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lvgl.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_SDL/lvgl/examples" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE DIRECTORY FILES "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/examples" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_SDL/build/lvgl/lib/liblvgl_examples.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/lib/liblvgl_examples.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl" TYPE FILE FILES
-    "/home/yuri/demoW34_SDL/lv_conf.h"
-    "/home/yuri/demoW34_SDL/lvgl/lv_version.h"
-    "/home/yuri/demoW34_SDL/lvgl/lvgl.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lv_conf.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lv_version.h"
+    "/home/yuri/demoW34_pluginVolcano_SDL/lvgl/lvgl.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/yuri/demoW34_SDL/build/lvgl/install_local_manifest.txt"
+  file(WRITE "/home/yuri/demoW34_pluginVolcano_SDL/build/lvgl/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -130,7 +130,7 @@ rule CXX_STATIC_LIBRARY_LINKER__lvgl_demos_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/yuri/demoW34_SDL -B/home/yuri/demoW34_SDL/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/yuri/demoW34_pluginVolcano_SDL -B/home/yuri/demoW34_pluginVolcano_SDL/build
   description = Re-running CMake...
   generator = 1
 
