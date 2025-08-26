@@ -33,6 +33,7 @@ add_executable(main
     ${PROJECT_SOURCE_DIR}/main/images/humidity_icon.c
     ${PROJECT_SOURCE_DIR}/main/components/arc_humidity.c
     ${PROJECT_SOURCE_DIR}/main/components/arc_luminosidade.c
+    ${PROJECT_SOURCE_DIR}/main/components/chart_temperatura.c
 )
 
 target_compile_definitions(main PRIVATE LV_CONF_INCLUDE_SIMPLE)

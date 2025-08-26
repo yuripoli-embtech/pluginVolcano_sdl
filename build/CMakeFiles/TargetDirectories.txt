@@ -1,0 +1,17 @@
+/home/yuri/demoW34_SDL/build/CMakeFiles/main.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/edit_cache.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/rebuild_cache.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/list_install_components.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/install.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/install/local.dir
+/home/yuri/demoW34_SDL/build/CMakeFiles/install/strip.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/lvgl.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/lvgl_thorvg.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/lvgl_examples.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/lvgl_demos.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/edit_cache.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/rebuild_cache.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/list_install_components.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/install.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/install/local.dir
+/home/yuri/demoW34_SDL/build/lvgl/CMakeFiles/install/strip.dir
