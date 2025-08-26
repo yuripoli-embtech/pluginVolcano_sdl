@@ -4,10 +4,11 @@
 static lv_style_t style_title;
 static lv_style_t style_bullet;
 
-static lv_obj_t * scale1;
+static lv_obj_t * scale;
+static lv_obj_t * label1;
 
 static lv_obj_t * create_scale_box(lv_obj_t * parent, const char * title, const char * text1);
-static void scale1_indic1_anim_cb(void * var, int32_t v);
+static void scale_indic1_anim_cb(void * var, int32_t v);
 
 lv_obj_t * arc_luminosidade(lv_obj_t * tile){
     static bool style_inited = false;
@@ -23,21 +24,21 @@ lv_obj_t * arc_luminosidade(lv_obj_t * tile){
         style_inited = true;
     }
 
-    scale1 = create_scale_box(tile, "Luminosidade", "Atual: -");
-    lv_obj_add_flag(lv_obj_get_parent(scale1), LV_OBJ_FLAG_FLEX_IN_NEW_TRACK);
+    scale = create_scale_box(tile, "Luminosidade", "Atual: -");
+    lv_obj_add_flag(lv_obj_get_parent(scale), LV_OBJ_FLAG_FLEX_IN_NEW_TRACK);
 
     static const char * scale_texts[] = {"0", "", "1", NULL};
-    lv_scale_set_text_src(scale1, scale_texts); 
-    lv_obj_set_style_pad_all(scale1, 15, 0);
+    lv_scale_set_text_src(scale, scale_texts); 
+    lv_obj_set_style_pad_all(scale, 15, 0);
     
-    lv_obj_set_size(scale1, 200, 200);
+    lv_obj_set_size(scale, 200, 200);
     lv_anim_t a;
     lv_anim_init(&a);
-    lv_anim_set_values(&a, 20, 100);
+    lv_anim_set_values(&a, 0, 100);
     lv_anim_set_repeat_count(&a, LV_ANIM_REPEAT_INFINITE);
     
     lv_obj_t * arc;
-    arc = lv_arc_create(scale1);
+    arc = lv_arc_create(scale);
     lv_obj_remove_style(arc, NULL, LV_PART_KNOB);
     lv_obj_remove_style(arc, NULL, LV_PART_MAIN);
     lv_obj_set_size(arc, lv_pct(100), lv_pct(100));
@@ -46,7 +47,7 @@ lv_obj_t * arc_luminosidade(lv_obj_t * tile){
     lv_obj_set_style_arc_color(arc, lv_palette_main(LV_PALETTE_YELLOW), LV_PART_INDICATOR);
     lv_obj_remove_flag(arc, LV_OBJ_FLAG_CLICKABLE);
 
-    lv_anim_set_exec_cb(&a, scale1_indic1_anim_cb);
+    lv_anim_set_exec_cb(&a, scale_indic1_anim_cb);
     lv_anim_set_var(&a, arc);
     lv_anim_set_duration(&a, 4100);
     lv_anim_set_reverse_duration(&a, 2700);
@@ -77,22 +78,8 @@ static lv_obj_t * create_scale_box(lv_obj_t * parent, const char * title, const 
     lv_obj_remove_style(bullet1, NULL, LV_PART_SCROLLBAR);
     lv_obj_add_style(bullet1, &style_bullet, 0);
     lv_obj_set_style_bg_color(bullet1, lv_palette_main(LV_PALETTE_YELLOW), 0);
-    lv_obj_t * label1 = lv_label_create(cont);
+    label1 = lv_label_create(cont);
     lv_label_set_text_static(label1, text1);
-
-    lv_obj_t * bullet2 = lv_obj_create(cont);
-    lv_obj_set_size(bullet2, 13, 13);
-    lv_obj_remove_style(bullet2, NULL, LV_PART_SCROLLBAR);
-    lv_obj_add_style(bullet2, &style_bullet, 0);
-    lv_obj_set_style_bg_color(bullet2, lv_palette_main(LV_PALETTE_BLUE), 0);
-    lv_obj_t * label2 = lv_label_create(cont);
-
-    lv_obj_t * bullet3 = lv_obj_create(cont);
-    lv_obj_set_size(bullet3, 13, 13);
-    lv_obj_remove_style(bullet3,  NULL, LV_PART_SCROLLBAR);
-    lv_obj_add_style(bullet3, &style_bullet, 0);
-    lv_obj_set_style_bg_color(bullet3, lv_palette_main(LV_PALETTE_GREEN), 0);
-    lv_obj_t * label3 = lv_label_create(cont);
 
     static int32_t grid_col_dsc[] = {LV_GRID_CONTENT, LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
     static int32_t grid_row_dsc[] = {LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_TEMPLATE_LAST};
@@ -101,20 +88,19 @@ static lv_obj_t * create_scale_box(lv_obj_t * parent, const char * title, const 
     lv_obj_set_grid_cell(title_label, LV_GRID_ALIGN_START, 0, 2, LV_GRID_ALIGN_START, 0, 1);
     lv_obj_set_grid_cell(scale, LV_GRID_ALIGN_START, 0, 2, LV_GRID_ALIGN_START, 1, 1);
     lv_obj_set_grid_cell(bullet1, LV_GRID_ALIGN_START, 0, 1, LV_GRID_ALIGN_START, 2, 1);
-    lv_obj_set_grid_cell(bullet2, LV_GRID_ALIGN_START, 0, 1, LV_GRID_ALIGN_START, 3, 1);
-    lv_obj_set_grid_cell(bullet3, LV_GRID_ALIGN_START, 0, 1, LV_GRID_ALIGN_START, 4, 1);
     lv_obj_set_grid_cell(label1, LV_GRID_ALIGN_STRETCH, 1, 1, LV_GRID_ALIGN_START, 2, 1);
-    lv_obj_set_grid_cell(label2, LV_GRID_ALIGN_STRETCH, 1, 1, LV_GRID_ALIGN_START, 3, 1);
-    lv_obj_set_grid_cell(label3, LV_GRID_ALIGN_STRETCH, 1, 1, LV_GRID_ALIGN_START, 4, 1);
 
     return scale;
 }
 
-static void scale1_indic1_anim_cb(void * var, int32_t v)
+static void scale_indic1_anim_cb(void * var, int32_t v)
 {
     lv_arc_set_value(var, v);
 
-    lv_obj_t * card = lv_obj_get_parent(scale1);
-    lv_obj_t * label = lv_obj_get_child(card, -5);
-    lv_label_set_text_fmt(label, "Atual: %"LV_PRId32" %%", v);
+    lv_obj_t * card = lv_obj_get_parent(scale);
+
+    // Mapeia v (0..100) para float 0..1
+    float display_value = v / 100.0f;
+
+    lv_label_set_text_fmt(label1, "Atual: %.1f", display_value);
 }
