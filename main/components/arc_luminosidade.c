@@ -44,7 +44,7 @@ lv_obj_t * arc_luminosidade(lv_obj_t * tile){
     lv_obj_set_size(arc, lv_pct(100), lv_pct(100));
     lv_obj_set_style_arc_opa(arc, 0, 0);
     lv_obj_set_style_arc_width(arc, 15, LV_PART_INDICATOR);
-    lv_obj_set_style_arc_color(arc, lv_palette_main(LV_PALETTE_YELLOW), LV_PART_INDICATOR);
+    lv_obj_set_style_arc_color(arc, lv_palette_main(LV_PALETTE_ORANGE), LV_PART_INDICATOR);
     lv_obj_remove_flag(arc, LV_OBJ_FLAG_CLICKABLE);
 
     lv_anim_set_exec_cb(&a, scale_indic1_anim_cb);
@@ -77,7 +77,7 @@ static lv_obj_t * create_scale_box(lv_obj_t * parent, const char * title, const 
     lv_obj_set_size(bullet1, 13, 13);
     lv_obj_remove_style(bullet1, NULL, LV_PART_SCROLLBAR);
     lv_obj_add_style(bullet1, &style_bullet, 0);
-    lv_obj_set_style_bg_color(bullet1, lv_palette_main(LV_PALETTE_YELLOW), 0);
+    lv_obj_set_style_bg_color(bullet1, lv_palette_main(LV_PALETTE_ORANGE), 0);
     label1 = lv_label_create(cont);
     lv_label_set_text_static(label1, text1);
 
