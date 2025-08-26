@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "stddef.h": "c",
+        "lvgl.h": "c",
+        "format": "c",
+        "sstream": "c",
+        "principal_gen.h": "c",
+        "ui.h": "c",
+        "refrigerador.h": "c",
+        "cstdlib": "c",
+        "lvgl_private.h": "c",
+        "charts.h": "c",
+        "arc_humidity.h": "c",
+        "humidity.h": "c",
+        "arc_luminosidade.h": "c"
+    },
+    "idf.pythonInstallPath": "/usr/bin/python"
+}
